@@ -1,0 +1,127 @@
+html {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 10px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 5rem ;
+    margin-bottom: 0rem;
+}
+
+ .container {
+     background-color: hsl(185, 75%, 39%);
+     height: 100vh;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     line-height: 0;
+     overflow: hidden;
+     position: relative;
+
+ }
+
+    
+
+ .img-top > img {
+     position: absolute;
+     transform: translate(-85% , -85%);
+ }
+ .img-bottom > img {
+     position: absolute;
+     transform: translate(16%, 0%);
+ }
+
+
+
+
+ .profile-card {
+     position: relative ;
+     width: 35rem;
+     background-color: white;
+     border-radius: 20px;
+     height: auto;
+     overflow: hidden;
+ 
+    
+ }
+ 
+ .cover-style { 
+    background-image: url(/images/bg-pattern-card.svg);
+    height: 12rem;
+    background-size: cover;
+    
+ }
+ .main-details {
+     border-bottom: 0.1rem solid hsl(227, 10%, 46%);
+     background-color: white;
+     line-height: normal;
+     text-align: center;
+ }
+    .main-details > img {
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+        margin: -13% auto 5% auto;
+        border: 0.5rem solid white;
+        overflow: hidden;
+        display: inline-block;
+        
+    }
+ 
+    .main-details > h2 {
+        margin: 0.5rem;
+        padding-bottom: 1rem;
+        color: hsl(229, 23%, 23%)
+    }
+        .main-details > h2 > span {
+            color: hsl(227, 10%, 46%);
+        }
+    .main-details > p {
+        color: hsl(227, 10%, 46%);
+        font-size: 1.3rem;
+        padding-bottom: 1rem;
+    }
+.user-details {
+    display: flex;
+    flex-direction: row;
+    line-height: normal;
+    background-color: white;
+    padding: 2rem 0rem;
+    justify-content: space-around;
+    color: hsl(229, 23%, 23%);
+    text-align: center;
+}
+
+    .followers > p {
+        padding-top: 1rem;
+        color: hsl(227, 10%, 46%);
+    }
+    .likes > p {
+        padding-top: 1rem;
+        color: hsl(227, 10%, 46%);
+    }
+    .photos > p {
+        padding-top: 1rem;
+        color: hsl(227, 10%, 46%);
+    }
+
+@media ( min-width: 320px ) and (max-width: 668px) {
+    .profile-card {
+        margin: 2rem;
+    }
+    body {
+        margin: 2rem ;
+        margin-bottom: -2rem;
+        height: fit-content;
+    }
+  
+    
+    
+
+   
+}      
