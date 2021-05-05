@@ -1,0 +1,165 @@
+html {
+    font-size: 10px;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+  }
+  body {
+    color: hsl(0, 0%, 100%);
+  }
+  
+  section {
+    background-color: hsl(233, 47%, 7%);
+    height: calc(100vh - 2.5rem);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  
+  .card {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-content: center;
+    align-self: center;
+    color: #fff;
+    padding: 1rem;
+    width: 100%;
+    height: auto;
+   
+  
+  }
+  .text {
+    width: 35rem;
+    background-color: hsl(244, 38%, 16%);
+    padding-left: 5rem;
+    padding-top: 10rem;
+    padding-right: 2.5rem;
+    padding-bottom: 5rem;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    height: auto;
+  }
+  
+  .description > h2 {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size:  2.5em;
+    margin-bottom: 2.5rem;
+  }
+  span {
+    color: hsl(277, 64%, 61%);
+  }
+  .description > p {
+    font-size: 1.2rem;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 2.5rem;
+    
+  
+  }
+  .stats {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.8rem;
+    font-family: 'Lexend Deca', sans-serif;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  .companies > p {
+    font-size: 1.6rem;
+    color: hsla(0, 0%, 100%, 0.75);
+    text-transform: uppercase;
+  }
+  .templates > p {
+    font-size: 1.6rem;
+    color: hsla(0, 0%, 100%, 0.75);
+    text-transform: uppercase;
+  }
+  .queries > h3 {
+    text-transform: uppercase;
+  }
+  .queries > p {
+    font-size: 1.6rem;
+    color: hsla(0, 0%, 100%, 0.75);
+    text-transform: uppercase;
+  }
+  .image {
+    background-image: url(/images/image-header-desktop.jpg);
+    background-repeat: no-repeat;
+    background-blend-mode: lighten;
+    background-size: cover;
+    background-color: hsl(277, 64%, 61%);
+    overflow: hidden;
+    border-bottom-right-radius: 2rem;
+    border-top-right-radius: 2rem;
+    width: 35rem;
+    height: auto;
+  
+  }
+  
+  
+  @media  (max-width:600px) {
+    
+    section {
+        height: 100vh;
+        width: 100%;
+        padding-top: 2rem;
+        flex-direction: column-reverse;
+        
+        
+    }
+    
+    .card {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .text {
+        width: 80%;
+        height: auto;
+        border-radius: 0 0 2rem 2rem;
+        padding: 2rem 2rem 0rem 2rem;
+  
+    }
+    .description > h2 {
+        font-family: 'Lexend Deca', sans-serif;
+        font-size:  1.8rem;
+        text-align: center;
+    }
+    .description > p {
+        font-size: 1rem;
+        text-align: center;
+    }   
+    .stats {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.4rem;
+        text-align: center;
+        align-items: center; 
+        min-height: auto;
+    }
+    .image {
+      background-image: url(/images/image-header-desktop.jpg);
+      background-repeat: no-repeat;
+      background-blend-mode: lighten;
+      background-size: cover;
+      background-color: hsl(277, 64%, 61%);
+      overflow: hidden;
+      border-top-left-radius: 2rem;
+      border-top-right-radius: 2rem;
+      border-bottom-right-radius: 0rem;
+      width: 80%;
+      height: 25rem;
+       
+       
+    }
+    
+  }
+  
+
